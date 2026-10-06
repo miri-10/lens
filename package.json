@@ -1,0 +1,19 @@
+{
+  "name": "lens-bot",
+  "version": "0.1.0",
+  "description": "@askLens: an X bot that posts Solana coin facts, safety tips and crypto terms, and replies when tagged",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/index.js",
+    "preview": "node --env-file-if-exists=.env src/preview.js",
+    "reply": "node --env-file-if-exists=.env src/preview.js --reply",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "twitter-api-v2": "^1.17.2"
+  }
+}
